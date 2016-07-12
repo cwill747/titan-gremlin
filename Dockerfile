@@ -1,6 +1,6 @@
 FROM java:latest
 
-MAINTAINER Eric Lubow <eric@lubow.org>
+MAINTAINER Cameron Will <cameron@thewills.email>
 
 LABEL Description="Titan Graph DB with Gremlin to be used with Cassandra and Elasticsearch" Version="1.0" Tags="cassandra,elasticsearch,graph,gremlin,titan"
 
