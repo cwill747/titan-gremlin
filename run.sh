@@ -57,4 +57,6 @@ echo "gremlin.graph=com.thinkaurelius.titan.core.TitanFactory
 storage.backend=cassandra
 storage.hostname=$CASSANDRA_PORT_9160_TCP_ADDR" > conf/gremlin-server/titan-cassandra-server.properties
 
+# Exit docker with success if the gremlin server exits, instead of 143
+trap 'exit 0' EXIT
 $BIN/gremlin-server.sh conf/gremlin-server/gremlin-server.yaml
